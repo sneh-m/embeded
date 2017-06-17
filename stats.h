@@ -9,32 +9,89 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stat.h 
+ * @brief header file for statistic programe
  *
- * <Add Extended Description Here>
+ * This file contains various function prototypes used in statistic programe
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author sneh mishra
+ * @date 17/06/2017
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief sort the given array in decreasing order
+ *
+ * This function uses insertion sort to sort the ginven array in decreasing order 
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return This function return nothing
+ */
+void sort_array( char* a, int n);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief returns minimum element in a reverse sorted array
  *
- * <Add Extended Description Here>
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return returns smallest integer
  */
+char find_minimum( char* a, int n);
 
+/**
+ * @brief returns maximum element in a reverse sorted array
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return returns biggest integer
+ */
+char find_maximum( char* a, int n);
+
+/**
+ * @brief return mean of given array
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return integer representing mean of given array
+ */
+char find_mean( char* a, int n);
+
+/**
+ * @brief return meadian of given array
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return integer representing median of given array
+ */
+char find_median( char* a, int n);
+
+
+/**
+ * @brief print thr given array
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return This function return nothing
+ */
+void print_array( char* a, int n);
+
+/**
+ * @brief print minimum, maximum, mean, median of the given array
+ *
+ * @param a Pointer to charecter array 
+ * @param n 32-bit integer for size of the array
+ *
+ * @return This function return nothing
+ */
+void print_statistics( char* a, int n);
 
 #endif /* __STATS_H__ */

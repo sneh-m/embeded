@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stat.c 
+ * @brief Assignment 1 in embebed systems
  *
- * <Add Extended Description Here>
+ * This C programe analyse given data and prints statistical report
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author sneh kumar mishra
+ * @date 17/06/2017
  *
  */
 
@@ -27,6 +27,35 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
+void sort_array(char *a,int n)
+{ 
+
+}
+
+char find_minimum(char* a,int n){
+
+}
+
+char find_maximum(char* a,int n){
+
+}
+
+char find_mean(char* a,int n){
+
+}
+
+char find_median(char* a,int n){
+
+}
+
+void print_array(char *a,int n){
+
+}
+
+void print_statistics(char *a,int n) {
+
+}
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -34,10 +63,11 @@ void main() {
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
-
-  /* Other Variable Declarations Go Here */
+  
   /* Statistics and Printing Functions Go Here */
-
+  sort_array(test,SIZE);
+  print_statistics(test,SIZE);
+  print_array(test,SIZE);
 }
 
 /* Add other Implementation File Code Here */
