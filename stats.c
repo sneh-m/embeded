@@ -29,31 +29,50 @@
 
 void sort_array(char *a,int n)
 { 
-
+  char item;
+  int k;
+  for(int i = 1; i < SIZE; i++ ) {
+      item = a[i];
+      k = i-1;
+      while(a[k]<item && k>=0)
+	{
+          a[k+1] = a[k];
+          k--;
+        }
+      a[k+1] = item;		
+    }
 }
 
 char find_minimum(char* a,int n){
-
+	return a[SIZE-1];
 }
 
 char find_maximum(char* a,int n){
-
+	return a[0];
 }
 
 char find_mean(char* a,int n){
-
+	int m = 0;
+	for(int i = 0; i<n; i++)
+		m += a[i];
+	return m/n;
 }
 
 char find_median(char* a,int n){
-
+	return ((int)a[19]+a[20])/2;
 }
 
 void print_array(char *a,int n){
-
+	for(int i = 0; i<n; i++){
+		printf("%d ",a[i]);
+	}
 }
 
 void print_statistics(char *a,int n) {
-
+	printf("maximum :: %d\n",find_maximum(a,n));
+	printf("minimun :: %d\n",find_minimum(a,n));
+	printf("   mean :: %d\n",find_mean(a,n));
+	printf(" median :: %d\n",find_median(a,n));
 }
 
 void main() {
