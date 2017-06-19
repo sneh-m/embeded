@@ -12,7 +12,7 @@
  * @file stat.c 
  * @brief Assignment 1 in embebed systems
  *
- * This C programe analyse given data and prints statistical report
+ * This C program analyse given data and prints statistical report
  *
  * @author sneh kumar mishra
  * @date 17/06/2017
