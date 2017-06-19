@@ -10,9 +10,9 @@
  *****************************************************************************/
 /**
  * @file stat.h 
- * @brief header file for statistic programe
+ * @brief header file for statistic program
  *
- * This file contains various function prototypes used in statistic programe
+ * This file contains various function prototypes used in statistic program
  *
  * @author sneh mishra
  * @date 17/06/2017
